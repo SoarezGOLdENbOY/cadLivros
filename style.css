@@ -1,0 +1,101 @@
+* {
+    font-family: 'Pixelify Sans', cursive;
+    color: aliceblue;
+  
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+  .background {
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  padding: 50px;
+  margin: 50px;
+  background-image: url(https://media.gazetadopovo.com.br/2018/09/41e70497f814fb5f11627682aaab024c-gpLarge.jpg);
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 23, 23);}
+  
+  .gta {
+  color: aliceblue;
+  font-family: 'Permanent Marker', cursive;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .button {
+    text-align: center;
+    padding: 1em 3em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: ointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit--user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:before {
+    content: "hello";
+    background: linear-gradient(
+      45deg,
+      #581313,
+      #ff7300,
+      #474620,
+      #2b3c24,
+      #274a45,
+      #111a47,
+            #2a1540,
+      #491822,
+      #531717
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opactiy 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  input{
+  background-color: transparent;
+  }

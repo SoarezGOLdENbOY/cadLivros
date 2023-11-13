@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO E PESQUISA DE LIVROS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h1> Cadastro e Pesquisa de Livros</h1>
+            <div id="cadastro">
+                <h2 id="banana">Cadastro de Livros</h2>
+                <form id="cadastroForm">
+                    <label for="name">DESCRIÇÃO:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="plataform">ISBN:</label>
+                    <input type="text" id="plataform" name="plataform" required><br>
+
+                    <button class="button" type="submit">Cadastrar</button>
+                    <button type="button" onclick="atualizarJogo()">🔁Atualizar</button>
+                    <button type="button" onclick="deletarJogo()">Deletar</button>
+                </form>
+            </div>
+
+            <div id="cadastro">
+                <h2>Pesquisa de Livros</h2>
+                <form id="pesquisaForm">
+                    <label for="searchId">ID do Livros:</label>
+                    <input type="text" id="searchId" name="searchId"><br>
+
+                    <button class="button" type="button" onclick="pesquisarLivros()">Pesquisar</button>
+                </form>
+                <div id="resultadoPesquisa"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
